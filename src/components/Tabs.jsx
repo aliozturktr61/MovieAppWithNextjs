@@ -8,7 +8,7 @@ const Tabs = () => {
     const searchParams = useSearchParams();
     const genre = searchParams.get("genre");
     console.log(genre, "genre");
-    const tabs = [{ name: "En Popüler", url: "popular" }, {name: "En Son Gelenler", url: "latest"},{name: "Yakında Gelecekler", url: "upcoming"}];
+    const tabs = [{ name: "En Popüler", url: "popular" }, {name: "En Çok Rating Alanlar", url: "top_rated"},{name: "Yakında Gelecekler", url: "upcoming"}];
   return (
     <div className='p-5 m-5 bg-gray-100 dark:bg-gray-900 flex items-center justify-center gap-5'>
      {tabs.map((tab,i)=>(

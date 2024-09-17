@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const getMovie=async(id)=>{
-    const res=await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=b8a9496dee663a618801da127b65c851&`)
+    const res=await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=51ac0cb256bf2dea75d3a20d26f069a7&`)
     
     return await res.json()
 }

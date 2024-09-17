@@ -6,7 +6,7 @@ const Page = async ({ searchParams }) => {
   const res = await fetch(
     `https://api.themoviedb.org/3/${
       searchParams.genre ? "movie/" + searchParams.genre : "trending/all/day"
-    }?api_key=b8a9496dee663a618801da127b65c851&language=en-US&page=1`,
+    }?api_key=51ac0cb256bf2dea75d3a20d26f069a7&language=en-US&page=1`,
     { next: { revalidate: 1000 } }
   );
   const data = await res.json();
